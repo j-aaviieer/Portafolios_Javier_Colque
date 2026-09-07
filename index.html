@@ -3,113 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolios - Javier Colque</title>
+    <title>Mi Portafolio | Desarrollador Skillnest</title>
     <link rel="stylesheet" href="static/css/style.css">
+    <!-- Iconos de FontAwesome (opcional para redes sociales) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navegación -->
-    <header class="header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">JC.</a>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-            <a href="https://github.com/j-aaviieer" target="_blank" rel="noopener noreferrer" class="btn-primary">
-                GitHub
-            </a>
-        </div>
+    <!-- Menú de Navegación -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">&lt;Javier Colque /&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon"><i class="fa-solid fa-moon"></i></button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Sección Hero (Presentación) -->
         <section id="inicio" class="hero">
             <div class="hero-content">
-                <span class="badge">Estudiante TP & SkillNest</span>
-                <h1>Javier Colque</h1>
-                <p class="hero-subtitle">Estudiante de 3º Medio en Liceo VVH enfocado en Desarrollo Web Frontend y resolución de problemas mediante código.</p>
-                <div class="hero-buttons">
-                    <a href="#proyectos" class="btn-primary">Ver proyectos</a>
-                    <a href="#contacto" class="btn-secondary">Contacto</a>
-                </div>
+                <h1>Hola, soy <span class="highlight">[Tu Nombre]</span></h1>
+                <h2>Desarrollador Front-End en formación | VVH & Skillnest</h2>
+                <p>Transformando ideas en experiencias web interactivas. Apasionado por la tecnología, el código limpio y el aprendizaje continuo.</p>
+                <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contáctame</a>
             </div>
         </section>
 
-        <!-- Sobre Mí -->
-        <section id="sobre-mi" class="section">
-            <h2 class="section-title">Sobre mí</h2>
-            <div class="about-card">
-                <p>
-                    Actualmente me encuentro cursando 3º Medio en el <strong>Liceo VVH</strong>, complementando mi formación con estudios intensivos de programación en <strong>SkillNest</strong>. Me especializo en maquetación semántica, diseño interactivo y lógica de desarrollo web. Busco constantemente aprender nuevas tecnologías y aplicar buenas prácticas en proyectos reales.
-                </p>
-            </div>
-        </section>
-
-        <!-- Habilidades -->
-        <section id="habilidades" class="section">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="grid-skills">
-                <div class="skill-card">
-                    <h3>HTML5 & CSS3</h3>
-                    <p>Diseño responsivo, maquetación semántica, Flexbox y Grid Layout.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>JavaScript (ES6+)</h3>
-                    <p>Manipulación del DOM, eventos, funciones asíncronas y lógica pura.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Git & GitHub</h3>
-                    <p>Control de versiones, flujo de trabajo con commits y despliegues web.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Proyectos -->
-        <section id="proyectos" class="section">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div class="grid-projects">
-                <article class="project-card">
-                    <div class="project-info">
-                        <h3>Portafolio Web Profesional</h3>
-                        <p>Diseño limpio y moderno desarrollado desde cero con HTML, CSS moderno y JS vanilla.</p>
-                        <div class="tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JS</span>
+        <!-- Sección Sobre Mí & Habilidades -->
+        <section id="sobre-mi" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Soy un profesional formándome en el programa de <strong>VVH a través de Skillnest</strong>. Mi objetivo es convertirme en un desarrollador capaz de resolver problemas reales mediante tecnología.</p>
+                        <p>Cuando no estoy programando, me interesa [escribe aquí tus otros intereses, ej: el diseño, los videojuegos, la música].</p>
+                        
+                        <h3>Tecnologías y Herramientas</h3>
+                        <div class="skills-container">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
                         </div>
                     </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-info">
-                        <h3>Proyectos SkillNest</h3>
-                        <p>Colección de ejercicios y desafíos prácticos resueltos durante el programa de formación.</p>
-                        <div class="tags">
-                            <span>JavaScript</span>
-                            <span>Frontend</span>
+                    <div class="about-video">
+                        <!-- Requisito de Video -->
+                        <video controls poster="assets/img/poster.jpg">
+                            <source src="assets/video/mi-presentacion.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <p class="video-caption">Conoce más sobre mi proceso de aprendizaje.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos (con filtros en JS) -->
+        <section id="proyectos" class="projects">
+            <div class="container">
+                <h2 class="section-title">Mis Proyectos</h2>
+                
+                <!-- Interacción con JavaScript -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="html-css">HTML & CSS</button>
+                    <button class="filter-btn" data-filter="js">JavaScript</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Proyecto 1 -->
+                    <div class="project-card" data-category="html-css">
+                        <img src="assets/img/proyecto1.jpg" alt="Captura del Proyecto 1">
+                        <div class="project-info">
+                            <h3>Clon de Página Web</h3>
+                            <p>Una réplica responsiva de una landing page famosa para practicar maquetación.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span><span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Ver Proyecto</a>
+                                <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Repositorio</a>
+                            </div>
                         </div>
                     </div>
-                </article>
+
+                    <!-- Proyecto 2 -->
+                    <div class="project-card" data-category="js">
+                        <img src="assets/img/proyecto2.jpg" alt="Captura del Proyecto 2">
+                        <div class="project-info">
+                            <h3>Calculadora Interactiva</h3>
+                            <p>Aplicación web que realiza operaciones matemáticas con manipulación del DOM.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fa-solid fa-eye"></i> Ver Proyecto</a>
+                                <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">Identidad Profesional</h2>
+                <p>¿Interesado en mi trabajo? ¡Hablemos!</p>
+                <div class="contact-links">
+                    <a href="mailto:tu-correo@ejemplo.com" class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>tu-correo@ejemplo.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>Mi perfil en LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/tu-usuario" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Mi GitHub</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer id="contacto" class="footer">
-        <div class="footer-container">
-            <h2>¿Hablamos?</h2>
-            <p>Puedes contactarme a través de mis vías directas:</p>
-            <div class="contact-links">
-                <a href="mailto:javiercolque@liceovvh.cl" class="contact-item">📧 javiercolque@liceovvh.cl</a>
-                <a href="tel:+56933316641" class="contact-item">📞 +56 9 3331 6641</a>
-            </div>
-            <p class="copyright">&copy; 2026 Javier Colque. Todos los derechos reservados.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 [Tu Nombre]. Desarrollado con 💻 en el programa VVH x Skillnest.</p>
     </footer>
 
     <script src="static/js/script.js"></script>
