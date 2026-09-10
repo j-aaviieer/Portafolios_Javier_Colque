@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio | Desarrollador Skillnest</title>
+    <title>Mi Portafolio | Javier Colque</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <!-- Iconos de FontAwesome (opcional para redes sociales) -->
+    <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -17,6 +17,7 @@
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#formacion">Formación</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -50,20 +51,38 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <p>Soy un profesional formándome en el programa de <strong>VVH a través de Skillnest</strong>. Mi objetivo es convertirme en un desarrollador capaz de resolver problemas reales mediante tecnología.</p>
-                        <p>Cuando no estoy programando, me interesa [escribe aquí tus otros intereses, ej: el diseño, los videojuegos, la música].</p>
+                        <p>Cuando no estoy programando, me interesa aprender nuevas herramientas, el diseño y superar retos técnicos.</p>
                         
                         <h3>Tecnologías y Herramientas</h3>
                         <div class="skills-container">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">GitHub</span>
-                            <span class="skill-tag">Bootstrap</span>
+                            <div class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo HTML5"> 
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Logo CSS3"> 
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Logo JavaScript"> 
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Logo Git"> 
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Logo GitHub"> 
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Logo Bootstrap"> 
+                                <span>Bootstrap</span>
+                            </div>
                         </div>
                     </div>
                     <div class="about-video">
-                        <!-- Requisito de Video -->
+                        <!-- Video -->
                         <video controls poster="assets/img/poster.jpg">
                             <source src="https://www.youtube.com/watch?v=HTPfHLYIFFY" type="video/mp4">
                             Tu navegador no soporta el elemento de video.
@@ -74,12 +93,43 @@
             </div>
         </section>
 
-        <!-- Sección de Proyectos (con filtros en JS) -->
+        <!-- Sección Formación Académica -->
+        <section id="formacion" class="education">
+            <div class="container">
+                <h2 class="section-title">Formación Académica</h2>
+                
+                <div class="education-grid">
+                    <!-- Institución 1: Vate Vicente Huidobro -->
+                    <div class="education-card">
+                        <!-- Reemplaza la ruta de la imagen con tu foto -->
+                        <img src="static/images/VVH.png" alt="Liceo Comercial Vate Vicente Huidobro" class="vvh">
+                        <div class="education-info">
+                            <h3>Liceo Comercial Vate Vicente Huidobro</h3>
+                            <p class="education-period">Educación Media</p>
+                            <p>Formación académica y técnica con especialidad en Programación.</p>
+                        </div>
+                    </div>
+
+                    <!-- Institución 2: Colegio Villa la Cultura -->
+                    <div class="education-card">
+                        <!-- Reemplaza la ruta de la imagen con tu foto -->
+                        <img src="static/images/Villa la Cultura.jfif" alt="Colegio Villa la Cultura" class="vlc">
+                        <div class="education-info">
+                            <h3>Colegio Villa la Cultura</h3>
+                            <p class="education-period">Educación Básica</p>
+                            <p>Lugar donde inicié mis primeros pasos de formación escolar y personal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
         <section id="proyectos" class="projects">
             <div class="container">
                 <h2 class="section-title">Mis Proyectos</h2>
                 
-                <!-- Interacción con JavaScript -->
+                <!-- Filtros -->
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all">Todos</button>
                     <button class="filter-btn" data-filter="html-css">HTML & CSS</button>
@@ -130,9 +180,10 @@
                 <div class="contact-links">
                     <a href="mailto:tu-correo@ejemplo.com" class="contact-card">
                         <i class="fa-solid fa-envelope"></i>
-                        <span>tu-correo@ejemplo.com</span>
+                        <span>javiercolque@liceovvh.cl</span>
+                        <span>javiercolquesoto32@gmail.com</span>
                     </a>
-                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="contact-card">
+                    <a href="https://www.linkedin.com/in/javier-colque-67b39a435/" target="_blank" class="contact-card">
                         <i class="fa-brands fa-linkedin"></i>
                         <span>Mi perfil en LinkedIn</span>
                     </a>
@@ -146,7 +197,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 [Tu Nombre]. Desarrollado con 💻 en el programa VVH x Skillnest.</p>
+        <p>&copy; 2026 Javier Colque. Desarrollado con 💻 en el programa VVH x Skillnest.</p>
     </footer>
 
     <script src="static/js/script.js"></script>
