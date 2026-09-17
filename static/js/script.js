@@ -1,38 +1,3 @@
-// 1. Funcionalidad: Alternar Modo Oscuro / Claro
-const themeToggleBtn = document.getElementById('theme-toggle');
-const body = document.body;
-const themeIcon = themeToggleBtn.querySelector('i');
-
-themeToggleBtn.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    
-    // Cambiar el icono entre luna y sol
-    if(body.classList.contains('dark-mode')) {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-    } else {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-    }
-});
-
-// 2. Funcionalidad: Menú responsivo (Hamburguesa)
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    // Animación simple de la hamburguesa
-    hamburger.classList.toggle('toggle');
-});
-
-// Cerrar el menú al hacer click en un enlace (móvil)
-document.querySelectorAll('.nav-links li a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-    });
-});
-
 // 3. Funcionalidad: Filtrado dinámico de proyectos
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
@@ -56,4 +21,22 @@ filterBtns.forEach(btn => {
             }
         });
     });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elementsToAnimate = document.querySelectorAll("main > *, section, article, .card");
+
+  elementsToAnimate.forEach(el => el.classList.add("fade-in"));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  elementsToAnimate.forEach(el => observer.observe(el));
 });
