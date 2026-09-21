@@ -459,10 +459,77 @@ section {
 
 /* --- Footer --- */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--card-bg);
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1rem 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  gap: 15px;
+  z-index: 5;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.527);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.527);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.tiktok {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.tiktok:hover {
+  transform: scale(1.1);
+}
+.instagram {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+    transition: 0.3s;
+}
+.instagram:hover {
+  transform: scale(1.1);
+}
+.youtube {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.youtube:hover {
+  transform: scale(1.1);
+}
+.facebook {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.facebook:hover {
+  transform: scale(1.1);
+}
+.twitter {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.twitter:hover {
+  transform: scale(1.1);
 }
 
 
